@@ -14,4 +14,21 @@
         <link rel="stylesheet" href="/css/navbar.css">
         <link rel="stylesheet" href="/css/slider.css" />
     </head>
+    <script>
+        function sanitizeInput(input) {
+            // Replace special characters with their HTML entities
+            return input.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        }
+
+        function displayUserInput() {
+            // Get user input from a form field
+            var userInput = document.getElementById("userInput").value;
+
+            // Sanitize the user input before displaying it
+            var sanitizedInput = sanitizeInput(userInput);
+
+            // Display the sanitized input on the page
+            document.getElementById("output").innerHTML = "Sanitized Input: " + sanitizedInput;
+        }
+    </script>
     <body>

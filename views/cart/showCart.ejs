@@ -3,7 +3,7 @@
 
 <div class="container">
     <div class="head">
-        <h4>Shopping Cart</h4>
+        <h4>Корзина</h4>
         <div class="icons-cart">
             <i class="fa fa-shopping-cart"></i>
             <hr />
@@ -14,9 +14,9 @@
         <thead>
             <tr>
                 <th>#</th>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Price</th>
+                <th>Товары</th>
+                <th>Количество</th>
+                <th>Цена</th>
                 <th></th>
             </tr>
         </thead>
@@ -56,11 +56,11 @@
         <div>
             <a class="btn" href="/products">
                 <i class="fa fa-arrow-left" aria-hidden="true"></i>
-                Continue Shopping
+               Продолжать покупку
             </a>
         </div>
         <div>
-            <p>Total Cost: <%= total %> ₸</p>
+            <p>Сумма: <%= total %> ₸</p>
             <form action="/payment_gateway/payumoney" method="post">
                 <input
                     class="con"
@@ -83,7 +83,7 @@
                     type="submit"
                     class="btn btn-main <% if(!total){ %> disabled <% } %>"
                 >
-                    Place Order
+                    Заказать
                 </button>
             </form>
         </div>

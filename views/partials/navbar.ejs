@@ -17,16 +17,10 @@
                 </li>
             <% } %>
         </ul>
-<!--        <ul>-->
-<!--            <li>Fashion</li>-->
-<!--            <li>Electronics</li>-->
-<!--            <li>Food</li>-->
-<!--        </ul>-->
-
         <div class="icons-user">
             <% if(!currentUser){ %>
-            <a href="/login" class="btn-sec">Login</a>
-            <a href="/register" class="btn-sec blue">Sign Up</a>
+            <a href="/login" class="btn-sec">Логин</a>
+            <a href="/register" class="btn-sec blue">Регистрация</a>
 
             <% } else{ %>
 
@@ -45,9 +39,9 @@
             <a href="/user/<%= currentUser._id %>">
                 <i class="fa fa-user-o" aria-hidden="true"></i>
             </a>
-            <a href="/logout" class="nav-link text-white oswald">Logout</a>
+            <a href="/logout" class="nav-link text-white oswald">Выйти</a>
             <% if(currentUser.username === 'admin@gmail.com'){ %>
-            <a href="/products/new" class="btn-sec blue">New</a>
+            <a href="/products/new" class="btn-sec blue">Админ панель</a>
             <% } %> <% } %>
         </div>
 

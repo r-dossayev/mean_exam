@@ -1,7 +1,7 @@
 <%- include("../partials/header")%> <%- include("../partials/navbar")%>
 <div class="container" style="margin-top: 5rem; margin-bottom: 11rem">
     <%- include('../partials/flash') %>
-    <h1 class="mb-5">Sign Up</h1>
+    <h1 class="mb-5">Регистрация</h1>
     <form
         class="needs-validation"
         action="/register"
@@ -16,55 +16,50 @@
                 type="email"
                 class="form-control"
                 id="username"
-                placeholder="Username"
+                placeholder="почта"
                 name="username"
                 required
             />
-            <div class="valid-feedback">Looks good!</div>
+            <div class="valid-feedback">Почта корректно</div>
         </div>
         <div class="mb-3">
-            <label for="title" class="form-label">Name</label>
+            <label for="title" class="form-label">Ваше имя</label>
             <input
                 type="title"
                 class="form-control"
                 id="title"
-                placeholder="Name"
+                placeholder="Имя"
                 name="title"
                 required
             />
-            <div class="valid-feedback">Looks good!</div>
+            <div class="valid-feedback">Хорошие имя!)</div>
         </div>
         <div class="mb-3">
-            <label for="password" class="form-label">Password </label>
+            <label for="password" class="form-label">Пароль </label>
             <input
                 type="password"
                 class="form-control"
                 id="password"
-                placeholder="Password"
+                placeholder="пароль"
                 name="password"
                 required
             />
-            <div class="valid-feedback">Looks good!</div>
+
         </div>
         <div class="mb-3">
-            <label for="password2" class="form-label">Confirm Password </label>
+            <label for="password2" class="form-label">Повторите пароль</label>
             <input
                 type="password"
                 class="form-control"
                 id="password2"
-                placeholder="Confirm Password"
+                placeholder="Повторите пароль"
                 name="password2"
                 required
             />
-            <div class="valid-feedback">Looks good!</div>
+            <div class="valid-feedback">Пароли совпадает</div>
         </div>
 
-        <button type="submit" class="btn-main">Submit</button>
-
-        <a href="/auth/google" class="btn btn-main blue ml-5">
-            <i class="fa fa-google text-lg text-white mr-2"></i> Sign In with
-            Google
-        </a>
+        <button type="submit" class="btn-main">Создать</button>
     </form>
 </div>
 
